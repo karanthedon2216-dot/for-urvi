@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Urvi ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+    background: linear-gradient(-45deg, #ff0000, #ff9900, #ff1a1a, #ffd000);
+    background-size: 400% 400%;
+    animation: bgMove 10s ease infinite;
+}
+
+@keyframes bgMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 0 0 25px rgba(255,255,255,0.9);
+}
+
+img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(255,255,255,0.8);
+    margin: 30px 0;
+}
+
+.message {
+    font-size: 24px;
+    line-height: 1.9;
+    max-width: 900px;
+    margin: auto;
+    white-space: pre-line;
+}
+
+.signature {
+    font-size: 28px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 24px;
+    animation: floatUp 8s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes floatUp {
+    0% {transform: translateY(0); opacity: 0;}
+    50% {opacity: 1;}
+    100% {transform: translateY(-110vh); opacity: 0;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- AUTOPLAY MUSIC -->
+<audio autoplay loop>
+  <source src="perfect.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<h1>Happy Birthday Urvi ❤️</h1>
+
+<img src="urvi-birthday.png">
+
+<div class="message">
+
+Urvi,
+
+There are so many things I should have said long ago.
+
+There were moments when you were tired… when you felt unheard… when loving me was not easy.  
+There were days when I was immature, toxic, angry, stubborn.. when my ego was louder than my love.
+
+And yet… you stayed.
+
+You stayed when you could have left.  
+You stayed when I didn’t deserve it.  
+You stayed when loving me required strength I didn’t even see in you at the time.
+
+Those first two years… I know I wasn’t the man you needed.  
+I made mistakes. I hurt you. I failed you in ways I can never undo.  
+But instead of walking away, you chose to believe in a better version of me.
+
+You saw something in me that I didn’t even see in myself.
+
+You didn’t just love me...you built me.  
+You corrected me.  
+You humbled me.  
+You taught me patience.  
+You taught me what real love looks like.
+
+Because of you, I am a better man today.  
+A better human.  
+A better partner.
+
+You didn’t give up on me.  
+You gave me a chance.
+
+And I promise you, that chance was never wasted.
+
+Every time you almost left but stayed… you saved us.  
+You saved me.
+
+I don’t say this enough... but I owe my growth to you.
+
+On your birthday, I don’t just celebrate the girl I love.  
+I celebrate the woman who made me who I am.
+
+Thank you for choosing me even when it was hard.  
+Thank you for loving me even when I was difficult.  
+Thank you for believing in us when I didn’t know how.
+
+You are my calm.  
+My safe place.  
+My home.
+
+And in every universe… I would still choose you.
+
+Thank you for being the perfect Gwen to your Spiderman.
+
+Forever yours.
+
+</div>
+
+<div class="signature">
+Love, Karan ❤️
+</div>
+
+</div>
+
+<script>
+for (let i = 0; i < 40; i++) {
+    let heart = document.createElement("div");
+    heart.innerHTML = "❤️";
+    heart.className = "heart";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+    heart.style.fontSize = (20 + Math.random() * 30) + "px";
+    document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
