@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Urvi ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #8b0000, #ff0000, #ffcc00, #ff4d4d);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+#enterScreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {opacity: 1;}
+    50% {opacity: 0.6;}
+    100% {opacity: 1;}
+}
+
+.content {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px gold;
+    margin-top: 20px;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+h1 {
+    font-size: 38px;
+    text-shadow: 0 0 20px gold;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 20px;
+    text-shadow: 0 0 10px red;
+}
+
+/* Floating Hearts */
+.heart {
+    position: absolute;
+    bottom: -10px;
+    font-size: 20px;
+    animation: rise 6s linear infinite;
+    color: pink;
+}
+
+@keyframes rise {
+    0% {transform: translateY(0) scale(1); opacity: 1;}
+    100% {transform: translateY(-800px) scale(1.5); opacity: 0;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="enterScreen" onclick="startExperience()">
+Tap to Enter ❤️
+</div>
+
+<div class="content" id="mainContent">
+
+<h1>Happy Birthday My Love ❤️</h1>
+
+<img src="urvi-birthday.png">
+
+<p>
+Urvi… I don’t even know where to begin.  
+There were moments when you could have walked away… when I was difficult, immature, toxic in ways I didn’t even understand about myself. In our first two years, I wasn’t the man you deserved. I hurt you without realizing how deeply words and actions can cut.  
+
+But you… you stayed.  
+
+You stayed when leaving would have been easier.  
+You stayed when I didn’t deserve it.  
+You stayed when I was still learning how to love properly.  
+
+And because you stayed… I changed.  
+You made me softer.  
+Kinder.  
+More patient.  
+More understanding.  
+You turned me into a better man without even trying.  
+
+You saw something in me when even I couldn’t see it in myself.  
+
+Thank you for choosing me again and again.  
+Thank you for believing in us when things were messy.  
+Thank you for being my calm, my strength, my safe place.  
+
+You are my peace in chaos.  
+My light in darkness.  
+My home.  
+
+And today, on your birthday, I just want to say —  
+I am who I am today because you loved me when I was still growing.  
+
+Thank you for being my 🐛  
+And for being the perfect Gwen to your forever Spider-Man. ❤️
+</p>
+
+</div>
+
+<audio id="bgMusic" loop>
+<source src="Perfect.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function startExperience() {
+    document.getElementById("enterScreen").style.display = "none";
+    document.getElementById("mainContent").style.display = "block";
+    document.getElementById("bgMusic").play();
+
+    // Create floating hearts
+    setInterval(function(){
+        var heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.innerHTML = "❤️";
+        document.body.appendChild(heart);
+
+        setTimeout(function(){
+            heart.remove();
+        }, 6000);
+    }, 500);
+}
+</script>
+
+</body>
+</html>
